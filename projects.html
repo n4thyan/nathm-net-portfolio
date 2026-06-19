@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects by Nathan May, including practical web tools, AI-assisted workflows and payment integration experiments." />
+  <meta name="description" content="Projects by Nathan May, including practical web tools, AI-assisted workflows, business dashboards and payment integration experiments." />
   <title>Projects | Nathan May</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -21,9 +21,9 @@
     </nav>
   </header>
 
-  <aside class="side-rail left-rail" aria-label="Social links">
+  <aside class="side-rail left-rail" aria-label="Professional links">
     <a href="https://github.com/n4thyan" target="_blank" rel="noopener">GitHub</a>
-    <a href="contact.html">Email</a>
+    <a href="https://www.linkedin.com/in/nathan-may-44b48b283/" target="_blank" rel="noopener">LinkedIn</a>
   </aside>
 
   <aside class="side-rail right-rail" aria-label="Email">
@@ -36,7 +36,7 @@
       <h1>Projects</h1>
       <p class="hero-text">
         A small collection of practical builds. I’m focusing on projects that show real workflows:
-        planning, implementation, local testing, documentation and honest limits.
+        planning, implementation, local testing, deployment, documentation and honest limits.
       </p>
     </section>
 
@@ -44,6 +44,87 @@
       <article class="case-study">
         <div class="case-main">
           <p class="project-label">Featured project</p>
+          <h2>WorkSight Dashboard</h2>
+
+          <p>
+            A practical office analytics dashboard for turning spreadsheet-style CSV data into KPIs,
+            charts, filters, data-quality notes and short plain-English summaries. It is built around
+            realistic workplace use cases such as sales review, invoice tracking, support tickets and
+            admin reporting.
+          </p>
+
+          <p>
+            The dashboard includes sample business data, CSV upload, date/status/department filters,
+            chart visualisations, a filtered data table, copyable summaries and a clean print-report view.
+            Uploaded CSV files are processed in the browser rather than sent to a server.
+          </p>
+
+          <div class="tag-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Chart.js</span>
+            <span>CSV data</span>
+            <span>Data quality</span>
+            <span>Office reporting</span>
+          </div>
+        </div>
+
+        <aside class="case-aside">
+          <p class="status-title">project_status</p>
+          <ul>
+            <li>Local testing passed</li>
+            <li>Sample data included</li>
+            <li>CSV upload supported</li>
+            <li>KPIs, filters and charts working</li>
+            <li>Rule-based summaries included</li>
+            <li>Prepared for nathm.net/worksight deployment</li>
+          </ul>
+
+          <p class="small-note">
+            This project does not claim to replace an analyst. It helps review spreadsheet data faster while keeping human review in the loop.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="https://nathm.net/worksight/" target="_blank" rel="noopener">Open dashboard</a>
+            <a class="button secondary" href="https://github.com/n4thyan/worksight-dashboard" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </aside>
+      </article>
+
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <p class="card-code">csv</p>
+          <h3>Spreadsheet workflow</h3>
+          <p>
+            Loads the built-in sample data or accepts a CSV upload using the documented business-data column format.
+          </p>
+        </div>
+
+        <div class="evidence-card">
+          <p class="card-code">kpi</p>
+          <h3>Business view</h3>
+          <p>
+            Calculates revenue, profit, average order value, open/overdue work and satisfaction from the active filtered rows.
+          </p>
+        </div>
+
+        <div class="evidence-card">
+          <p class="card-code">review</p>
+          <h3>Responsible notes</h3>
+          <p>
+            Generates rule-based summaries and data-quality checks, with clear wording that the source data still needs human review.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>02.</span> Payment Integration Starter Kit</p>
+
+      <article class="case-study">
+        <div class="case-main">
+          <p class="project-label">Payment workflow project</p>
           <h2>Payment Integration Starter Kit</h2>
 
           <p>
@@ -90,70 +171,10 @@
           </div>
         </aside>
       </article>
-
-      <div class="evidence-grid">
-        <div class="evidence-card">
-          <p class="card-code">$ widget --state</p>
-          <h3>Checkout widget</h3>
-          <p>
-            The widget loads locally, shows the demo checkout as ready, and safely shows Stripe and
-            PayPal as off when credentials are not configured.
-          </p>
-        </div>
-
-        <div class="evidence-card">
-          <p class="card-code">$ demo --run</p>
-          <h3>Demo success flow</h3>
-          <p>
-            The local demo checkout redirects to a success page and clearly labels the provider as
-            demo, not a real payment.
-          </p>
-        </div>
-
-        <div class="evidence-card">
-          <p class="card-code">$ health --json</p>
-          <h3>Health endpoint</h3>
-          <p>
-            The health endpoint reports product data, currency settings and which providers are
-            currently configured.
-          </p>
-        </div>
-      </div>
     </section>
 
     <section class="section reveal">
-      <p class="section-kicker"><span>03.</span> What this project shows</p>
-
-      <div class="about-grid">
-        <div>
-          <p>
-            This is not presented as a finished payment company or production-certified checkout
-            system. It is a starter kit and portfolio project showing how I structure a small backend,
-            separate provider logic, handle environment configuration and document what has been tested.
-          </p>
-
-          <p>
-            The project also shows how I use AI in a realistic way: for planning, code support,
-            documentation and review. The final work still needs human testing, local validation and
-            clear notes about limitations.
-          </p>
-        </div>
-
-        <ul class="tech-list">
-          <li>Server-side provider logic</li>
-          <li>Environment variables</li>
-          <li>Frontend checkout widget</li>
-          <li>Local demo mode</li>
-          <li>Health checks</li>
-          <li>Testing notes</li>
-          <li>Security notes</li>
-          <li>README documentation</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <p class="section-kicker"><span>04.</span> Other projects</p>
+      <p class="section-kicker"><span>03.</span> HashJackpot</p>
 
       <article class="project-card">
         <div class="project-content">
@@ -191,6 +212,36 @@
           </ul>
         </div>
       </article>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>04.</span> What these projects show</p>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            These projects are not presented as production-certified systems. They are practical portfolio
+            builds showing how I structure small web tools, handle local testing, document limitations and
+            deploy working examples.
+          </p>
+
+          <p>
+            They also show how I use AI in a realistic way: for planning, code support, documentation and
+            review. The final work still needs human testing, local validation and clear notes about limitations.
+          </p>
+        </div>
+
+        <ul class="tech-list">
+          <li>Dashboard UI</li>
+          <li>CSV parsing</li>
+          <li>Chart visualisation</li>
+          <li>Node.js routes</li>
+          <li>Static deployment</li>
+          <li>IIS / HTTPS setup</li>
+          <li>Testing notes</li>
+          <li>README documentation</li>
+        </ul>
+      </div>
     </section>
   </main>
 
