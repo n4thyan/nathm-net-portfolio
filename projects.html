@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -82,8 +82,12 @@
           </ul>
 
           <p class="small-note">
-            Repo is currently private while the portfolio is being finished. Planned public release after final review.
+            Public repository available on GitHub. Provider testing still needs real sandbox credentials.
           </p>
+
+          <div class="hero-actions">
+            <a class="button secondary" href="https://github.com/n4thyan/payment-integration-starter-kit" target="_blank" rel="noopener">View GitHub</a>
+          </div>
         </aside>
       </article>
 
@@ -151,13 +155,42 @@
     <section class="section reveal">
       <p class="section-kicker"><span>04.</span> Other projects</p>
 
-      <div class="placeholder-project">
-        <h3>More projects coming soon</h3>
-        <p>
-          I’m keeping this portfolio focused. More projects will be added once they are cleaned up,
-          documented and worth showing properly.
-        </p>
-      </div>
+      <article class="project-card">
+        <div class="project-content">
+          <p class="project-label">Live technical demo</p>
+          <h3>HashJackpot</h3>
+          <p>
+            A SHA-256 probability demo and rare-hash leaderboard. Each spin creates one hash,
+            scores rarity from leading zero bits, and uses a Node.js backend to verify submitted
+            proofs before accepting leaderboard entries.
+          </p>
+
+          <div class="tag-list">
+            <span>JavaScript</span>
+            <span>SHA-256</span>
+            <span>Node.js</span>
+            <span>Web Worker</span>
+            <span>Probability</span>
+            <span>Leaderboard</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="https://nathm.net/hashjackpot/" target="_blank" rel="noopener">Open live demo</a>
+            <a class="button secondary" href="https://github.com/n4thyan/HashJackpot" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-status">
+          <p class="status-title">Validation</p>
+          <ul>
+            <li>Live under nathm.net/hashjackpot</li>
+            <li>Node backend running behind IIS reverse proxy</li>
+            <li>Health endpoint tested</li>
+            <li>Server-side proof verification included</li>
+            <li>No real money, crypto or prizes</li>
+          </ul>
+        </div>
+      </article>
     </section>
   </main>
 
