@@ -711,3 +711,43 @@ h3,
     grid-template-columns: 1fr;
   }
 }
+
+/* CV download panel */
+.cv-download-panel {
+  border: 1px solid rgba(0, 188, 242, 0.22);
+  border-radius: 12px;
+  background: rgba(1, 36, 86, 0.48);
+  box-shadow: var(--shadow);
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.cv-download-panel h3 {
+  color: var(--ps-font);
+  margin-bottom: 12px;
+}
+
+.cv-download-panel p {
+  color: var(--muted);
+}
+
+.cv-download-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 760px) {
+  .cv-download-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-download-actions {
+    justify-content: flex-start;
+  }
+}
