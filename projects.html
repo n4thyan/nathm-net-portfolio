@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Nathan May, including practical web tools, AI-assisted workflows and payment integration experiments." />
+  <title>Projects | Nathan May</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">nathm.net</a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html"><span>01.</span> Home</a>
+      <a href="projects.html" class="active"><span>02.</span> Projects</a>
+      <a href="cv.html"><span>03.</span> CV</a>
+      <a href="contact.html"><span>04.</span> Contact</a>
+    </nav>
+  </header>
+
+  <aside class="side-rail left-rail" aria-label="Social links">
+    <a href="https://github.com/n4thyan" target="_blank" rel="noopener">GitHub</a>
+    <a href="contact.html">Email</a>
+  </aside>
+
+  <aside class="side-rail right-rail" aria-label="Email">
+    <a href="mailto:hello@nathm.net">hello@nathm.net</a>
+  </aside>
+
+  <main>
+    <section class="page-hero reveal">
+      <p class="intro-line">projects --list</p>
+      <h1>Projects</h1>
+      <p class="hero-text">
+        A small collection of practical builds. I’m focusing on projects that show real workflows:
+        planning, implementation, local testing, documentation and honest limits.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <article class="case-study">
+        <div class="case-main">
+          <p class="project-label">Featured project</p>
+          <h2>Payment Integration Starter Kit</h2>
+
+          <p>
+            A reusable Node.js starter kit for adding checkout flows to web projects. It is designed
+            as a practical foundation that can be adapted into websites needing a simple deposit,
+            quote, order or booking payment flow.
+          </p>
+
+          <p>
+            The project includes separated provider logic for Stripe and PayPal, environment-based
+            configuration, backend routes, a frontend checkout widget and a local demo checkout mode.
+            The demo mode makes it possible to test the full widget flow without needing live provider
+            accounts.
+          </p>
+
+          <div class="tag-list">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>JavaScript</span>
+            <span>Frontend widget</span>
+            <span>API routes</span>
+            <span>Demo checkout</span>
+            <span>Documentation</span>
+          </div>
+        </div>
+
+        <aside class="case-aside">
+          <p class="status-title">project_status</p>
+          <ul>
+            <li>Local install passed</li>
+            <li>Syntax checks passed</li>
+            <li>Health endpoint tested</li>
+            <li>Widget rendered locally</li>
+            <li>Demo checkout completed</li>
+            <li>Stripe and PayPal provider testing pending sandbox credentials</li>
+          </ul>
+
+          <p class="small-note">
+            Repo is currently private while the portfolio is being finished. Planned public release after final review.
+          </p>
+        </aside>
+      </article>
+
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <p class="card-code">$ widget --state</p>
+          <h3>Checkout widget</h3>
+          <p>
+            The widget loads locally, shows the demo checkout as ready, and safely shows Stripe and
+            PayPal as off when credentials are not configured.
+          </p>
+        </div>
+
+        <div class="evidence-card">
+          <p class="card-code">$ demo --run</p>
+          <h3>Demo success flow</h3>
+          <p>
+            The local demo checkout redirects to a success page and clearly labels the provider as
+            demo, not a real payment.
+          </p>
+        </div>
+
+        <div class="evidence-card">
+          <p class="card-code">$ health --json</p>
+          <h3>Health endpoint</h3>
+          <p>
+            The health endpoint reports product data, currency settings and which providers are
+            currently configured.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>03.</span> What this project shows</p>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            This is not presented as a finished payment company or production-certified checkout
+            system. It is a starter kit and portfolio project showing how I structure a small backend,
+            separate provider logic, handle environment configuration and document what has been tested.
+          </p>
+
+          <p>
+            The project also shows how I use AI in a realistic way: for planning, code support,
+            documentation and review. The final work still needs human testing, local validation and
+            clear notes about limitations.
+          </p>
+        </div>
+
+        <ul class="tech-list">
+          <li>Server-side provider logic</li>
+          <li>Environment variables</li>
+          <li>Frontend checkout widget</li>
+          <li>Local demo mode</li>
+          <li>Health checks</li>
+          <li>Testing notes</li>
+          <li>Security notes</li>
+          <li>README documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>04.</span> Other projects</p>
+
+      <div class="placeholder-project">
+        <h3>More projects coming soon</h3>
+        <p>
+          I’m keeping this portfolio focused. More projects will be added once they are cleaned up,
+          documented and worth showing properly.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Nathan May. Simple portfolio. Real projects. Human-reviewed AI-assisted work.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

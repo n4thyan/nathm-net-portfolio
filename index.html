@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nathan May portfolio. Practical web projects, AI-assisted workflows, GitHub projects, CV and contact details." />
+  <title>Nathan May | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">nathm.net</a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="active"><span>01.</span> Home</a>
+      <a href="projects.html"><span>02.</span> Projects</a>
+      <a href="cv.html"><span>03.</span> CV</a>
+      <a href="contact.html"><span>04.</span> Contact</a>
+    </nav>
+  </header>
+
+  <aside class="side-rail left-rail" aria-label="Social links">
+    <a href="https://github.com/n4thyan" target="_blank" rel="noopener">GitHub</a>
+    <a href="contact.html">Email</a>
+  </aside>
+
+  <aside class="side-rail right-rail" aria-label="Email">
+    <a href="mailto:hello@nathm.net">hello@nathm.net</a>
+  </aside>
+
+  <main>
+    <section class="hero reveal">
+      <p class="intro-line">Hi, my name is</p>
+      <h1>Nathan May.</h1>
+      <h2>I build practical web tools.</h2>
+
+      <p class="hero-text">
+        I’m a self-taught developer from Swansea building small, useful web projects with HTML,
+        CSS, JavaScript, Node.js and Python. I use AI to help plan, debug and document work faster,
+        but I still review, test and take responsibility for the final result.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="projects.html">View my projects</a>
+        <a class="button secondary" href="cv.html">View CV</a>
+      </div>
+
+      <div class="mini-terminal" aria-label="Current build status">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <p>portfolio_status</p>
+        </div>
+        <div class="terminal-body">
+          <p><span>$</span> certificate --status</p>
+          <p class="terminal-output">Google AI Professional Certificate completed</p>
+          <p><span>$</span> latest_project --status</p>
+          <p class="terminal-output">Payment starter kit tested locally with demo checkout</p>
+          <p><span>$</span> provider_testing --status</p>
+          <p class="terminal-output">Stripe and PayPal sandbox testing pending credentials</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>01.</span> About</p>
+      <div class="about-grid">
+        <div>
+          <p>
+            I’m currently building a simple portfolio around real projects rather than filler demos.
+            My focus is practical web tools, clear documentation, safe configuration and projects that
+            can be explained honestly.
+          </p>
+          <p>
+            I use AI as part of my workflow, mainly for planning, code support, debugging ideas and
+            documentation. I do not treat AI output as automatically correct. I check the work, test it
+            locally and document what has and has not been validated.
+          </p>
+        </div>
+
+        <ul class="tech-list">
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Python</li>
+          <li>Git / GitHub</li>
+          <li>AI-assisted workflows</li>
+          <li>Documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>02.</span> Featured Project</p>
+
+      <article class="project-card">
+        <div class="project-content">
+          <p class="project-label">Featured build</p>
+          <h3>Payment Integration Starter Kit</h3>
+          <p>
+            A reusable Node.js starter kit for adding checkout flows to web projects. It includes
+            separated provider logic for Stripe and PayPal, environment-based configuration, an
+            embeddable checkout widget and a local demo checkout flow for testing without real
+            payment accounts.
+          </p>
+
+          <div class="tag-list">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>JavaScript</span>
+            <span>Stripe-ready</span>
+            <span>PayPal-ready</span>
+            <span>Demo checkout</span>
+          </div>
+        </div>
+
+        <div class="project-status">
+          <p class="status-title">Validation</p>
+          <ul>
+            <li>Local install passed</li>
+            <li>Syntax checks passed</li>
+            <li>Health endpoint tested</li>
+            <li>Widget rendered locally</li>
+            <li>Demo checkout completed</li>
+            <li>Provider testing still needs sandbox credentials</li>
+          </ul>
+          <a href="projects.html">Read project summary →</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Nathan May. Simple portfolio. Real projects. Human-reviewed AI-assisted work.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
