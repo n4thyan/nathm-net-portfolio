@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects by Nathan May, including practical web tools, AI-assisted workflows, business dashboards and payment integration experiments." />
+  <meta name="description" content="Projects by Nathan May, including practical web tools, AI-assisted workflows, business dashboards, local AI stream tooling and payment integration experiments." />
   <title>Projects | Nathan May</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -120,7 +120,60 @@
     </section>
 
     <section class="section reveal">
-      <p class="section-kicker"><span>02.</span> Payment Integration Starter Kit</p>
+      <p class="section-kicker"><span>02.</span> PotatoBrain Live AI Stream Bot</p>
+
+      <article class="case-study compact-case">
+        <div class="case-main">
+          <p class="project-label">Local AI stream automation</p>
+          <h2>PotatoBrain Live AI Stream Bot</h2>
+
+          <p>
+            A local livestream AI bot that connects chat commands to a small LM Studio model and displays
+            replies in OBS through a terminal-style browser overlay. It is built for practical stream testing,
+            not as a hosted chatbot wrapper.
+          </p>
+
+          <p>
+            The project includes a Python bridge, Tikfinity WebSocket support for TikTok LIVE, YouTube and Kick
+            adapters, username sanitisation, message filtering, cooldowns, queue limits, optional browser TTS,
+            Discord webhook logging and an emergency pause control.
+          </p>
+
+          <div class="tag-list">
+            <span>Python</span>
+            <span>AsyncIO</span>
+            <span>LM Studio</span>
+            <span>OBS overlay</span>
+            <span>WebSockets</span>
+            <span>Discord webhooks</span>
+            <span>Streaming tools</span>
+          </div>
+        </div>
+
+        <aside class="case-aside">
+          <p class="status-title">project_status</p>
+          <ul>
+            <li>Working local portfolio release</li>
+            <li>LM Studio path tested</li>
+            <li>OBS overlay and browser TTS tested</li>
+            <li>Tikfinity connection path tested</li>
+            <li>Discord logging supported</li>
+            <li>Supervised live testing still recommended</li>
+          </ul>
+
+          <p class="small-note">
+            This project is not a moderation replacement. It uses filtering, sanitisation and pause controls, but live use still needs human oversight.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button secondary" href="https://github.com/n4thyan/tikfinity-lmstudio-ai-stream-bot" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </aside>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-kicker"><span>03.</span> Payment Integration Starter Kit</p>
 
       <article class="case-study">
         <div class="case-main">
@@ -174,7 +227,7 @@
     </section>
 
     <section class="section reveal">
-      <p class="section-kicker"><span>03.</span> HashJackpot</p>
+      <p class="section-kicker"><span>04.</span> HashJackpot</p>
 
       <article class="project-card">
         <div class="project-content">
@@ -215,7 +268,7 @@
     </section>
 
     <section class="section reveal">
-      <p class="section-kicker"><span>04.</span> What these projects show</p>
+      <p class="section-kicker"><span>05.</span> What these projects show</p>
 
       <div class="about-grid">
         <div>
@@ -235,8 +288,10 @@
           <li>Dashboard UI</li>
           <li>CSV parsing</li>
           <li>Chart visualisation</li>
+          <li>Async Python</li>
+          <li>Local LLM integration</li>
+          <li>OBS overlay work</li>
           <li>Node.js routes</li>
-          <li>Static deployment</li>
           <li>IIS / HTTPS setup</li>
           <li>Testing notes</li>
           <li>README documentation</li>
